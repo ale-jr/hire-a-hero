@@ -14,6 +14,7 @@ To keep things simple, I chose not to create a router, so this project follows t
 
 - `/state`: State management
   - `/{domain}/actions.ts`: Redux actions for a domain
+  - `/{domain}/asyncActions.ts`: Redux async actions for a domain
   - `/{domain}/reducers.ts`: Redux reducers for a domain
   - `/{domain}/types.ts`: Redux constantes and types for action creators and store
   - `store.ts`: Redux store configuration

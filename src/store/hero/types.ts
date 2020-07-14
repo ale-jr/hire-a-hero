@@ -1,4 +1,4 @@
-import { FetchError } from '../../utils/fetchHeroes'
+import { FetchError } from '../../utils/fetchApi'
 export const SET_HEROES = 'SET_HEROES'
 export const SET_HEROES_LOADING = 'SET_HEROES_LOADING'
 export const SET_HEROES_ERROR = 'SET_HEROES_ERROR'
