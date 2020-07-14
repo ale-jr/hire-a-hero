@@ -1,0 +1,8 @@
+{
+  "errors": {
+    "fetch": "Verifique sua conexão e tente novamente",
+    "unknown": "Ocorreu um erro insperado, tente novamente :D",
+    "missingName": "Digite um nome para pesquisar",
+    "noHeroes": "Nenhum herói encontrado :/"
+  }
+}
