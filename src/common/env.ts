@@ -1,0 +1,1 @@
+export const HERO_API_ACCESS_TOKEN = process.env.REACT_APP_HERO_API_ACCESS_TOKEN

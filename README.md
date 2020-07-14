@@ -28,7 +28,7 @@ To keep things simple, I chose not to create a router, so this project follows t
 - `/utils`: HTTP functions and other future useful functions
 - `/i18n`: Internacionalization Component and i18n configurations
 
-## This project uses translations, even with there is only one language, why?
+## This project uses translations, why?
 
 As all this code is writen in english, I usually don't feel comfortable with portuguese and english at the same place, besides that, I think text should be sepatared from logic and layout of a aplication, that's why a spent some time with [react-i18next](https://react.i18next.com/) cofiguration :D
 
