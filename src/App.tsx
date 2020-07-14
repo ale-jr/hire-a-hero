@@ -1,4 +1,5 @@
 import React from 'react'
+import './i18n'
 import ReduxProvider from './store/Provider'
 const App: React.FC = () => {
   return (
