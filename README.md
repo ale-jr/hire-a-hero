@@ -13,8 +13,9 @@ Just a simple React demo with Redux to manage state and Styled Components to sty
 To keep things simple, I chose not to create a router, so this project follows this structure:
 
 - `/state`: State management
-  - `/actions`: Redux actions
-  - `/reducers`: Redux reducers
+  - `/{domain}/actions.ts`: Redux actions for a domain
+  - `/{domain}/reducers.ts`: Redux reducers for a domain
+  - `/{domain}/types.ts`: Redux constantes and types for action creators and store
   - `store.ts`: Redux store configuration
   - `Provider.tsx`: Component with Redux with configured
 - `/components`: UI components
