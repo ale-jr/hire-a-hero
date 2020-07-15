@@ -25,9 +25,13 @@ To keep things simple, I chose not to create a router, so this project follows t
   - `/organisms`: A bunch of molecules, here you can put some business logic (but not too much)
   - `/templates`: Reusable components that will be turned into pages
   - `/pages`: Instances of templates with others elements in order to deliver first class experience to the user :D
+- `/themes`: Themes, ThemeProvider, createTheme function and types, all using styled-components
 - `/common`: Environment variables and constants
 - `/utils`: HTTP functions and other future useful functions
 - `/i18n`: Internacionalization Component and i18n configurations
+- `/App.tsx`: Where all Providers are used as well as main page
+- `/GlobalStyles.tsx`: Styles components global style for body and html tags
+- `/index.tsx`: React entrypoint
 
 ## This project uses translations, why?
 
