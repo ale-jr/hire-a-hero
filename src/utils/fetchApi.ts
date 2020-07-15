@@ -10,7 +10,7 @@ type FetchOptions = {
   urlParams?: Record<string, string | number>
 }
 /** This function uses fetch, so only network errors wiil throw exceptions */
-export const fetchApi = ({ url, urlParams }: FetchOptions): Promise<unknown> =>
+export const fetchApi = ({ url, urlParams }: FetchOptions): Promise<any> =>
   new Promise((resolve, reject) => {
     const fetchUrl = urlParams ? colonReplace(url, urlParams) : url
     fetch(fetchUrl)
