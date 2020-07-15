@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
       <HeroModal />
       <PageWithSearchHeaderTemplate>
         {hero.error && <ApiError error={hero.error.message} />}
-        {hero.heroes.length < 1 && !hero.error && <Welcome />}
+        {hero.heroes.length < 1 && !hero.error && !hero.loading && <Welcome />}
         {hero.heroes.length > 0 && <Sort />}
         <HeroesList loading={hero.loading} heroes={hero.heroes} />
       </PageWithSearchHeaderTemplate>

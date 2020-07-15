@@ -9,6 +9,7 @@ import Typography from '../atoms/Typography'
 import Image from '../atoms/Image'
 import styled from 'styled-components'
 import breakpoints from 'styled-components-breakpoint'
+import ProgressWithTitle from '../molecules/ProgressWithTitle'
 
 const ImageAndInfoGrid = styled.div`
   display: flex;
@@ -60,12 +61,12 @@ const HeroModal: React.FC = () => {
           </ImageAndInfoGrid>
           <Typography as="h2">{t('info.powers')}</Typography>
           {Object.keys(powers).map((key) => (
-            <div key={key}>
-              <Typography strong>{t(`orderByPowerOptions.${key}`)}</Typography>
-              <Typography gutterBottom>
-                {hero.powerstats[key as HeroPowers]}
-              </Typography>
-            </div>
+            <ProgressWithTitle
+              key={key}
+              title={t(`orderByPowerOptions.${key}`)}
+              value={hero.powerstats[key as HeroPowers]}
+              max="100"
+            />
           ))}
         </>
       )}
