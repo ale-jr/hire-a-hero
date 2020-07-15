@@ -7,15 +7,21 @@ import { useSelector } from 'react-redux'
 import ApiError from '../molecules/ApiError'
 import Welcome from '../molecules/WelcomeMessage'
 import Sort from '../organisms/Sort'
+import HeroesList from '../organisms/HeroList'
+import HeroModal from '../organisms/HeroModal'
 const HomePage: React.FC = () => {
   const { t } = useTranslation()
   const hero = useSelector((state: RootState) => state.hero)
   return (
-    <PageWithSearchHeaderTemplate>
-      {hero.error && <ApiError error={hero.error.message} />}
-      {hero.heroes.length < 1 && !hero.error && <Welcome />}
-      {hero.heroes.length > -1 && <Sort />}
-    </PageWithSearchHeaderTemplate>
+    <>
+      <HeroModal />
+      <PageWithSearchHeaderTemplate>
+        {hero.error && <ApiError error={hero.error.message} />}
+        {hero.heroes.length < 1 && !hero.error && <Welcome />}
+        {hero.heroes.length > 0 && <Sort />}
+        <HeroesList loading={hero.loading} heroes={hero.heroes} />
+      </PageWithSearchHeaderTemplate>
+    </>
   )
 }
 

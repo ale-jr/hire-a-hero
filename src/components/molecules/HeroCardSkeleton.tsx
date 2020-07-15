@@ -7,30 +7,40 @@ import { Hero } from '../../store/hero/types'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
-type HeroCardProps = {
-  hero: Hero
-  onHeroClick(): void
-}
-
+import Skeleton from 'react-loading-skeleton'
 const PaddingContainer = styled.div`
   padding: 10px;
 `
 
-const HeroCard: React.FC<HeroCardProps> = ({ hero, onHeroClick }) => {
-  const { t } = useTranslation()
+const HeroCardSkeleton: React.FC = () => {
   return (
-    <Card onClick={onHeroClick} role="button">
-      <Image src={hero.image.url} roundedTop />
+    <Card>
+      <Skeleton width="100%" height={500} />
       <PaddingContainer>
         <Typography strong>
-          {hero.name} ({t(`alignment.${hero.biography.alignment}`)})
+          <Skeleton />
         </Typography>
         <Typography>
-          <FontAwesomeIcon icon={faBriefcase} /> {hero.work.occupation}
+          <Skeleton width="80%" />
         </Typography>
       </PaddingContainer>
     </Card>
   )
 }
 
-export default HeroCard
+type RepeatSkeletonProps = {
+  count: number
+  skeleton: React.FC
+}
+export const RepeatSkeleton: React.FC<RepeatSkeletonProps> = ({
+  count,
+  skeleton: Skeleton,
+}) => {
+  const Skeletons: JSX.Element[] = []
+  for (let i = 0; i < count; i++) {
+    Skeletons.push(<Skeleton key={i} />)
+  }
+  return <>{Skeletons}</>
+}
+
+export default HeroCardSkeleton
