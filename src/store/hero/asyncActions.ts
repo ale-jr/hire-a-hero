@@ -30,6 +30,7 @@ export const fetchHeroesByName = (name: string): ReduxThunkAction => async (
     },
   })
     .then(({ response, results, error }) => {
+      console.log('then', response, results, error)
       if (error === HERO_API_ERROR_BAD_REQUEST) {
         dispatch(
           setHeroError({
@@ -49,11 +50,11 @@ export const fetchHeroesByName = (name: string): ReduxThunkAction => async (
           }),
         )
       } else {
-        setHeroes(results as Hero[])
+        dispatch(setHeroes(results as Hero[]))
       }
     })
-    .catch(setHeroError)
+    .catch((error) => dispatch(setHeroError(error)))
     .finally(() => {
-      setHeroLoading(false)
+      dispatch(setHeroLoading(false))
     })
 }
