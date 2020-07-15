@@ -11,7 +11,7 @@ export const mainTheme = createTheme({
       contrast: '#FFFFFF',
     },
     secondary: {
-      color: '#8377D1',
+      color: '#3F3F78',
       contrast: '#FFFFFF',
     },
     danger: {

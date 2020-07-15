@@ -35,9 +35,14 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, error }) => {
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
     event,
   ) => setValue(event.target.value)
-
-  const handleSearchButton = (): void => {
+  const handleSearch = (): void => {
     validate(value) && onSearch(value)
+  }
+
+  const handleInputKeyUp: React.KeyboardEventHandler<HTMLInputElement> = (
+    event,
+  ) => {
+    if (event.keyCode == 13) handleSearch()
   }
 
   const errorMessage = validationError || error
@@ -45,12 +50,13 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, error }) => {
   return (
     <Fieldset>
       <Input
+        onKeyUp={handleInputKeyUp}
         onChange={handleInputChange}
         value={value}
         placeholder={hasError ? errorMessage : t('searchPlaceholder')}
         error={hasError}
       />
-      <IconButton type="button" onClick={handleSearchButton} icon={faSearch} />
+      <IconButton type="button" onClick={handleSearch} icon={faSearch} />
     </Fieldset>
   )
 }

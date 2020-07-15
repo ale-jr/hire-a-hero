@@ -6,8 +6,12 @@ const WelcomeMessage: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <CenterContainer>
-      <Typography as="h3">{t('welcome')}</Typography>
+    <CenterContainer height="calc(100vh - 120px)">
+      <Typography as="h1" gutterBottom>
+        {t('welcomeTitle')}
+      </Typography>
+      <Typography as="h3">{t('welcomeDescription')}</Typography>
+      <Typography as="h3">{t('userSearchBox')}</Typography>
     </CenterContainer>
   )
 }

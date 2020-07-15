@@ -13,9 +13,7 @@ type FetchOptions = {
 export const fetchApi = ({ url, urlParams }: FetchOptions): Promise<any> =>
   new Promise((resolve, reject) => {
     const fetchUrl = urlParams ? colonReplace(url, urlParams) : url
-    const headers = new Headers()
-    headers.append('Target-URL', 'https://superheroapi.com/api')
-    fetch(fetchUrl, { headers })
+    fetch(fetchUrl)
       .then((response) => response.json())
       .then(resolve)
       .catch((error) => reject({ message: i18n.t('errors.fetch'), error }))

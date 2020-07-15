@@ -7,7 +7,9 @@
     "noHeroes": "Nenhum herói encontrado :/"
   },
   "searchPlaceholder": "Buscar heróis",
-  "welcome": "Para achar um super herói, use a caixa de busca acima",
+  "welcomeTitle": "Contrate seu herói favorito!",
+  "welcomeDescription": "Aqui você encontra os melhores super heróis do mercado, mas caso você precise de alguém do outro lado temos também :)",
+  "userSearchBox": "Para achar um super herói, use a caixa de busca acima", 
   "foundHeroes": "Heróis encontrados",
   "orderByPower": "Ordenar por poder",
   "orderByPowerOptions": {
