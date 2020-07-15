@@ -8,6 +8,7 @@ import { sortHeroesByPower } from '../../store/hero/actions'
 import { HeroPowers } from '../../store/hero/types'
 const FlexContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 `
 const TypographyGrow = styled(Typography)`

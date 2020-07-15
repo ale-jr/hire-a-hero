@@ -17,5 +17,18 @@
     "durability": "Durabilidade",
     "power": "Energia",
     "combat": "Combate"
+  },
+  "alignment": {
+    "good": "Do bem",
+    "bad": "Do mal"
+  },
+  "info": {
+    "realName": "Nome verdadeiro",
+    "placeOfBirth": "Local de Nascimento",
+    "publisher": "Universo",
+    "alignment": "Lado",
+    "work": "Histórico profissional",
+    "connections": "Conexões",
+    "powers": "Super poderes"
   }
 }
