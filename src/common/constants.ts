@@ -1,2 +1,2 @@
 export const HERO_API_SEARCH_ENDPOINT =
-  'http://localhost:9000/:accessToken/search/:name'
+  'https://us-central1-hire-a-hero.cloudfunctions.net/superHeroApi/:accessToken/search/:name'
