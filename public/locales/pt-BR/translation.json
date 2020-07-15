@@ -1,0 +1,36 @@
+{
+  "brand": "Hire a Hero",
+  "errors": {
+    "fetch": "Verifique sua conexão e tente novamente",
+    "unknown": "Ocorreu um erro insperado, tente novamente :D",
+    "missingName": "Digite um nome",
+    "noHeroes": "Nenhum herói encontrado :/"
+  },
+  "searchPlaceholder": "Buscar heróis",
+  "welcomeTitle": "Contrate seu herói favorito!",
+  "welcomeDescription": "Aqui você encontra os melhores super heróis do mercado, mas caso você precise de alguém do outro lado temos também :)",
+  "userSearchBox": "Para achar um super herói, use a caixa de busca acima", 
+  "foundHeroes": "Heróis encontrados",
+  "orderByPower": "Ordenar por poder",
+  "orderByPowerOptions": {
+    "intelligence": "Inteligência",
+    "strength": "Força",
+    "speed": "Velocidade",
+    "durability": "Durabilidade",
+    "power": "Energia",
+    "combat": "Combate"
+  },
+  "alignment": {
+    "good": "Do bem",
+    "bad": "Do mal"
+  },
+  "info": {
+    "realName": "Nome verdadeiro",
+    "placeOfBirth": "Local de Nascimento",
+    "publisher": "Universo",
+    "alignment": "Lado",
+    "work": "Histórico profissional",
+    "connections": "Conexões",
+    "powers": "Super poderes"
+  }
+}
