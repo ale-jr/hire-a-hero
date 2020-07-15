@@ -45,8 +45,8 @@ export const sortHeroesByPower = (power: HeroPowers): ReduxThunkAction => (
   heroesToBeSorted.sort((heroA, heroB) => {
     const heroAPower = +heroA.powerstats[power]
     const heroBPower = +heroB.powerstats[power]
-    if (heroAPower > heroBPower) return 1
-    if (heroAPower < heroBPower) return -1
+    if (heroAPower > heroBPower) return -1
+    if (heroAPower < heroBPower) return 1
     else return 0
   })
   dispatch(setHeroes(heroesToBeSorted))

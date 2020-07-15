@@ -1,2 +1,2 @@
 export const HERO_API_SEARCH_ENDPOINT =
-  'https://superheroapi.com/api/:accessToken/search/:name'
+  'http://localhost:9000/:accessToken/search/:name'

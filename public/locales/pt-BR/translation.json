@@ -1,0 +1,21 @@
+{
+  "brand": "Hire a Hero",
+  "errors": {
+    "fetch": "Verifique sua conexão e tente novamente",
+    "unknown": "Ocorreu um erro insperado, tente novamente :D",
+    "missingName": "Digite um nome",
+    "noHeroes": "Nenhum herói encontrado :/"
+  },
+  "searchPlaceholder": "Buscar heróis",
+  "welcome": "Para achar um super herói, use a caixa de busca acima",
+  "foundHeroes": "Heróis encontrados",
+  "orderByPower": "Ordenar por poder",
+  "orderByPowerOptions": {
+    "intelligence": "Inteligência",
+    "strength": "Força",
+    "speed": "Velocidade",
+    "durability": "Durabilidade",
+    "power": "Energia",
+    "combat": "Combate"
+  }
+}
